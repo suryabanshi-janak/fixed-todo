@@ -1,6 +1,6 @@
 # Broken React TO DO application based on context api
 
-This application was intentionally broken, there are six critical issues that a candidate has to fix:
+This application was intentionally broken, there are six critical issues that you need to fix:
 
 1. Fix an ability to display all tasks.
 2. Fix a layout, checkboxes should be listed in a column.
