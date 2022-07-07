@@ -7,7 +7,16 @@ export const TodoForm = () => {
   const [task, setTask] = React.useState('');
 
   const handleAddTodo = () => {
-    // Fin an ability to add new task
+    if (task !== '') {
+      const newTodos = [...todos, {
+          id: todos.slice(-1)[0].id + 1,
+          label: task,
+          checked: false,
+        },
+      ];
+      setTodos(newTodos);
+      setTask('');
+    }
   };
 
   const handleKeyUp = (e) => {
